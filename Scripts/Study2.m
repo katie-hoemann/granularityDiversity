@@ -106,12 +106,6 @@ mdl2_S = fitlm(x2_S,y2_S); % run the model once to get diagnostics
 outliers2 = find(mdl2_S.Diagnostics.CooksDistance>3*mean(mdl2_S.Diagnostics.CooksDistance)); % use 3*M(Cook's distance) to identify outliers
 mdl2_S = fitlm(x2_S,y2_S,'exclude',outliers2); % re-run model with outliers removed
 
-mdl2_X_S = [ones(size(measures,1),1) x2_S];
-[~,mdl2_S_CI,~,~,~] = regress(y1_S,mdl2_X_S); % get 95% CI for beta coefficients
-predictors_S_R2 = [zscore(measures(:,7)) zscore(numPrompts)]; 
-mdl2_S_R = fitlm(predictors_S_R2,y1_S);
-y_S_R2 = table2array(mdl2_S_R.Residuals(:,1)); % get residuals for plotting
-
 y2_S_NO = y2_S; % create copies of variables with outliers removed
 y2_S_NO(outliers2) = [];
 posGran_S_NO = zscore(measures(:,3));
