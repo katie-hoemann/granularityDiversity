@@ -1,0 +1,137 @@
+﻿%
+1	exam
+2	in_class
+3	mealtimes
+4	socializing
+5	at_work
+6	schedule
+7	coursework
+8	at_home
+9	downtime
+10	relationships
+%
+afgekregen	3	9
+afgemaakt	3	9
+afgesproken	4
+afgewerkt	3	9
+afkrijg*	3	9
+afmaak	3	9
+afmaken	3	9
+afspreek*	4
+afspreken	4
+ambetant*	5
+angst*	1
+at	3
+bed*	6	8
+begin*	4	7
+begon*	4	7
+bel*	4
+bib*	7
+blij*	4	9
+concentr*	7
+dag*	6	8
+deadline*	7
+droevig*	10
+eet	3
+eten	3
+examen*	1
+frustreer*	5
+frustreren	5
+game*	9
+gebeld	4
+gefrustreerd	5
+gegeten	3
+gehoord	10
+geleefd	10
+geleerd	2
+gelezen	10
+gelopen	8
+geluk*	4	9
+geniet*	3	9
+genoot	3	9
+genoten	3	9
+gepraat	4	10
+gerust	6
+geslapen	6
+gespeeld	9
+gestopt	8
+gestudeerd	1
+gevoelen	7
+gevraagd	1	5
+gewandeld	8
+gewerkt	5	7
+groep*	4
+gsm	8
+hoor*	10
+horen	10
+interessant*	2
+jaar	10
+jaren	10
+kamer*	5	8
+klaargemaakt	1
+klaarmaak	1
+klaarmaken	1
+laat	6
+las	10
+late	6
+leef*	10
+leer*	2
+lees*	10
+leren	2
+les*	1	2
+leven	10
+lezen	10
+loop*	8
+mens*	5	10
+minuten	8
+minuut	8
+moe	6
+nacht*	6
+nagelezen	10
+nalees*	10
+nalezen	10
+ochtend	6
+ontbijt*	3
+ontspan*	5	9
+opdracht*	6	7
+opgeruimd	8
+opruim*	8
+plan*	4
+praat*	4	10
+praten	4	10
+programma*	9
+project*	4	7
+relax*	5	9
+rust	6
+rusten	6
+rustig*	7
+rustte*	6
+slaap*	6
+slapen	6
+speel*	9
+spelen	9
+stop*	8
+stress*	1
+studeer*	1
+taak	7
+taken	7
+test*	1
+vandaag	5	6
+verdrietig*	10
+vergadering*	4
+vermoei*	6
+vertel*	4	8
+vertrek*	8
+vertrokken	8
+verveel*	5
+vervel*	5
+voorbereid*	1
+voormiddag	6
+vraag*	1	5
+vragen	1	5
+vriend*	4	10
+wandel*	8
+week	1
+weekend*	4	6
+weken	1
+werk*	5	7

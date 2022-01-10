@@ -1,0 +1,11 @@
+INPUT FILE SETTINGS: (specified file path with .txt files)
+OUTPUT GENERATION: (specified file path for output location)
+TEXT SEGMENTATION: (none; default)
+CONVERSION LIST: see separate file; checked box to use 'lookup' method
+STOP LIST: see separate file
+DICTIONARY LIST: (none; default)
+TOKEN HANDLING OPTIONS: unchecked box to NOT use automated/algorithmic lemmatization
+OUTPUT FILE TYPES: frequency list only; prune every 100 documents
+N-GRAM SETTINGS: ignore documents with a word count less than 10
+
+Defaults retained for all other settings
