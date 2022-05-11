@@ -3,6 +3,7 @@ ARCHIVE (if present)
 
 DATA
 > Files that are necessary for running MATLAB script to calculate granularity and mean affect for each data set
+> Files that are necessary for running R scripts to perform meta-analysis, integrative data analysis (IDA), and sensitivity (power) analyses
 
 LIWC (license/download and general instructions available at http://liwc.wpengine.com/)
 > Custom LIWC2015 dictionaries created for Studies 2 and 3 based on (translations) of Study 1 themes
@@ -20,3 +21,6 @@ SCRIPTS
 - Study1.m = uses outputs from 'granularity_affect measures.m' and 'PCA_score texts_changepoints.R' to a) calculate diversity of themes for each participant in dataSet1, b) run regression models for the relationship between granularity and thematic diversity, and c) generate figures for study results as well as example participants
 - Study2.m = uses outputs from 'granularity_affect measures.m' and LIWC2015 to a) calculate diversity of themes for each participant in dataSet2, b) run regression models for the relationship between granularity and thematic diversity, and c) generate figures for study results
 - Study3.m = uses outputs from 'granularity_affect measures.m' and LIWC2015 to a) calculate diversity of themes for each participant in dataSet3, b) run regression models for the relationship between granularity and thematic diversity, and c) generate figures for study results
+- Study1-3_IDA.R = combines standardized data from all three studies in an integrative data analysis
+- Study1-3_meta-analysis.R = performs fixed effects meta-analysis of effect sizes from Studies 1-3, including meta-analytic sensitivity/power analysis
+- Study1-3_sensitivity analyses.R = performs sensitivity (power) analyses for regression analyses (both single-study and IDA)
