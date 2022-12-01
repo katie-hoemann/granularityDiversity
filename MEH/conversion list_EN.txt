@@ -294,3 +294,14 @@ depress*^depress
 shock*^shock
 woeful*^woe
 stress*^stress
+tv^television
+prof^professor
+min^minute
+prep^prepare
+e-mail*^email
+ppl^people
+see*^see
+meet*^meet
+met^meet
+better^good
+best^good

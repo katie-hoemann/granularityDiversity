@@ -1,0 +1,238 @@
+﻿%
+1	RC6
+2	RC2
+3	RC1
+4	RC7
+5	RC3
+6	RC4
+7	RC8
+8	RC5
+9	RC9
+10	RC10
+%
+aandacht	2	10
+aangenaam	5
+aangename*	5
+afgekregen	4	6	8
+afgemaakt*	4	6	8
+afgerond*	4	6	8
+afgesproken	3
+afgewerkt*	4	6	8
+afheb*	4	6	8
+afkrijg*	4	6	8
+afmaak*	4	6	8
+afmaken	4	6	8
+afrond*	4	6	8
+afspreken	3	5
+afwerk*	4	6	8
+ambetant*	3	10
+amuse*	4	8
+angst*	1
+antwoord*	3
+at	4
+aula*	1	2
+babbel*	5	9	10
+bed	7
+begin*	1
+begonnen*	1
+begre*	10
+begrijp*	10
+bel*	9
+bib	6
+blij*	5	8
+bureau*	3
+chat*	5	9	10
+chil*	8
+concentr*	6
+cursus*	1	2
+dacht*	9
+dag	3	7
+dagen	3	7
+deadline*	6
+denk*	9
+discussie*	5
+down	10
+draag*	7
+dragen	7
+droeg*	7
+droevig*	10
+dut*	7
+eet	4
+emotie*	6
+eten*	4
+examen*	1
+fijn*	5
+film*	8
+focus*	6
+frustr*	3	10
+gamen	8
+gang*	4
+gebabbeld	5	9	10
+gebeld	9
+gechat	5	9	10
+gechild	8
+geconcentreerd*	6
+gedacht*	9
+gedragen	7
+gefocust	6
+gefrustreerd*	3	10
+gegamed	8
+gegeten	4
+gekaart	8
+gekeken	8
+geleefd	9	10
+geleerd	2	10
+gelezen	9
+gelopen	3
+gelukkig*	5	8
+geniet*	4	8
+geno*	4	8
+genoteerd	1	2
+gepland	5
+gepoetst	9
+gepraat	5	9	10
+gereageerd	3
+ge�rriteerd*	3	10
+gerust	7
+geslapen	7
+gesnapt*	10
+gespannen	5
+gespeeld	8
+gesprek*	5
+gesproken	5	9	10
+gestopt*	3	9
+gestrest	1
+gestudeerd*	1	10
+gestuurd	3
+gevoel*	6
+gevonden	9
+gevraagd	1	3	10
+gewacht	3
+gewandeld	3
+gewerkt*	3	6
+groep*	1
+gsm	9
+honger*	4
+hoofd	6
+interessant*	2
+irrite*	3	10
+jaar	5
+jaren	5
+kaarten	8
+kamer*	9
+keek*	8
+kijk*	8
+klaargemaakt*	4	6	8
+klaarmaak*	4	6	8
+klaarmaken	4	6	8
+kot*	9
+laat	3	7
+labo*	3
+las	9
+late*	3	7
+leef*	9	10
+leer*	2	10
+lees*	9
+leren	2	10
+les	1	2
+lessen	1	2
+leuk*	5
+leven	9	10
+lezen	9
+liep*	3
+loop*	3
+lopen	3
+mail*	3
+mens*	10
+minuten	3
+minuut*	3
+moe	7
+morgen*	3	4	7
+muziek*	8
+nacht*	7
+nagedacht	9
+nagelezen	9
+nalees*	9
+nota*	1	2
+noteer*	1	2
+noteren	1	2
+notitie*	1	2
+ochtend*	3	4	7
+oefening*	6
+ontbeten	4
+ontbijt	4
+ontspan*	8
+opdracht*	6
+opgeruimd	9
+opruim*	9
+opruimen	9
+paper*	6	9
+plan*	5
+poets*	9
+praat*	5	9	10
+praten	5	9	10
+proble*	10
+programma*	8
+project*	6	9
+reage*	3
+relax*	8
+ruimte*	9
+rust*	7
+semester*	5
+serie*	8
+show*	8
+slaap*	7
+slapen	7
+sliep*	7
+snap*	10
+span*	5
+speel*	8
+spel*	8
+sprak*	5	9	10
+spreek*	5	9	10
+stop*	3	9
+stress*	1
+studeer*	1	10
+studeren	1	10
+sturen	3
+stuur*	3
+superblijk	5	8
+superleuk*	5
+supermoe	7
+taak*	6
+taken	6
+telefoon*	9
+test*	1
+thesis	6	9
+trein*	3
+uitgeput	7
+uitgerust	7
+vandaag	3
+verdriet*	10
+verhuis*	3	9
+verhuizen	3	9
+vermoei*	7
+vertel*	3	5	9
+vertrek*	3
+vertrok*	3
+verveel*	2
+vervelen	2
+vervelend*	3	10
+verwacht*	10
+vind*	9
+volk	10
+vond*	9
+voorbereid*	1
+voormiddag	3	4	7
+vraag*	1	3	10
+vragen	1	3	10
+vriend*	5
+vroeg*	1	3	10
+vrolijk*	5	8
+wacht*	3
+wandel*	3
+weblecture	2
+week	5
+weekend*	5
+werk*	3	6
+zenuw*	1

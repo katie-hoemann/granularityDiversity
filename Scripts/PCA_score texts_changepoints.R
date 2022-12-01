@@ -1,4 +1,4 @@
-#RYAN BOYD, Lancaster University, last updated on 2020-03-24; Katie Hoemann, KU Leuven, updated 2021-03-24
+#RYAN BOYD, Lancaster University, last updated on 2020-03-24; Katie Hoemann, KU Leuven, updated 2022-09-20
 #----All input should be in .CSV format and MUST be in wide format for this script
 #----This script requires the following packages (working as of R version 3.5.1):
 # install.packages("psych")
@@ -17,34 +17,22 @@ library(changepoint)
 
 #SET PARAMETERS
 dataSet <- "ARI" # data set corresponding to folder name
-nGrams <- 100 # number n-grams extracted
-fileDate <- "2021-04-28" # date MEH file was generated
-minWordCount <- 30 # minimum word count to analyze
+minWords <- 25 # minimum length of texts analyzed
+unigrams <- 150 # number n-grams extracted
+fileDate <- "2022-10-20" # date MEH file was generated
 numComponents <- 10 # number of components/factors to extract in PCA
 
-setwd(paste0("C:/Users/Katie/Documents/MEH/",dataSet,"/",nGrams))
-dirName <- paste("PCA results",nGrams,numComponents,sep='_')
+setwd(paste0("C:/Users/Katie/Documents/MEH/",dataSet,"/All texts_longer than ",minWords,"/",unigrams))
+dirName <- paste("PCA results",minWords,unigrams,numComponents,sep='_')
 dir.create(dirName, showWarnings = FALSE)
 
 
 #LOAD DATA
-BeginningColumn <- 5 #This script will do a PCA starting at this column and will include all variables to the end of your dataset
-
 DF <- read.csv(paste0(fileDate,"_MEH_DTM_Binary.csv"), fileEncoding = 'UTF-8-BOM')
-DF[BeginningColumn:length(DF)] <- apply(DF[BeginningColumn:length(DF)], 2, as.character)
-DF[BeginningColumn:length(DF)] <- apply(DF[BeginningColumn:length(DF)], 2, as.numeric)
-
+beginningColumn <- 5 # the first column including variables to be included in the PCA
+DF[beginningColumn:length(DF)] <- apply(DF[beginningColumn:length(DF)], 2, as.character)
+DF[beginningColumn:length(DF)] <- apply(DF[beginningColumn:length(DF)], 2, as.numeric)
 colnames(DF)[1] = 'Filename'
-DF <- subset(DF, WC >= minWordCount) # grab only entries meeting minimum word count
-
-
-#EXPLORATORY PCA TO DETERMINE NUMBER OF COMPONENTS
-explorePCA <- PCA(DF[BeginningColumn:length(DF)],graph=FALSE)
-exploreEVs <- get_eigenvalue(explorePCA)
-exploreEVs <- as.data.frame(exploreEVs)
-EVgt1 <- nrow(subset(exploreEVs, exploreEVs$eigenvalue >= 1))
-EVgt2 <- nrow(subset(exploreEVs, exploreEVs$eigenvalue >= 2))
-fviz_eig(explorePCA, ncp=EVgt1)
 
 
 #DEFINE FUNCTIONS
@@ -123,7 +111,7 @@ PCAFunction <- function(InputData, NumberOfFactors) {
 
 #RUN PCA
 sink(paste(dirName, "/", Sys.Date(), "_-_PCA_Results.txt", sep="")) #This is where you call the PCA. This saves all results to a file.
-PCA_Results = PCAFunction(DF[BeginningColumn:length(DF)], NumberOfFactors=numComponents)
+PCA_Results = PCAFunction(DF[beginningColumn:length(DF)], NumberOfFactors=numComponents)
 sink()
 
 PCA_Scores_DF = data.frame(PCA_Results$scores)
@@ -136,10 +124,9 @@ write.csv(PCA_Scores_DF, paste(dirName, "/", Sys.Date(), "_-_PCA_Results - Score
 
 #SCORE TEXTS FOR PCA COMPONENTS
 DF = data.frame(fread(paste0(fileDate,"_MEH_DTM_Verbose.csv"))) #read in the VERBOSE (i.e., "relative frequency") document term matrix
+setwd(paste0("C:/Users/Katie/Documents/MEH/",dataSet,"/All texts_longer than ",minWords,"/",unigrams,"/","PCA results","_",minWords,"_",unigrams,"_",numComponents)) #jump to PCA results directory
 
-setwd(paste0("C:/Users/Katie/Documents/MEH/",dataSet,"/",nGrams,"/","PCA results","_",nGrams,"_",numComponents)) #jump to PCA results directory
-
-loadings = read.csv(paste0(fileDate,"_-_PCA_Results - Loadings.csv")) #read in the loadings file from the PCA 
+loadings = read.csv(paste0(Sys.Date(),"_-_PCA_Results - Loadings.csv")) #read in the loadings file from the PCA 
 colnames(loadings)[1] = 'Term' #set the first column of the loading matrix to have the variable name "Term"
 loadings[,c(2:ncol(loadings))][ abs(loadings[,c(2:ncol(loadings))]) < .10] = NA #suppress small values
 DF_Scored = data.frame(DF$Filename) #create an empty data frame to fill out
@@ -185,4 +172,4 @@ for (i_comp in 1:numComponents) {
   DF[,colName] = 0; DF[colData >= cp_high,colName] = 1;
 }
 
-write.csv(DF, paste0("MEM Themes - Dataset - Scored via Relative Frequencies - Changepoints High_",nGrams,"_",numComponents,".csv"), row.names = F, na='')
+write.csv(DF, paste0("MEM Themes - Dataset - Scored via Relative Frequencies - Changepoints High_",minWords,"_",unigrams,"_",numComponents,".csv"), row.names = F, na='')

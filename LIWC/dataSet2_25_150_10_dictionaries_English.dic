@@ -1,0 +1,134 @@
+﻿%
+1	RC6
+2	RC2
+3	RC1
+4	RC7
+5	RC3
+6	RC4
+7	RC8
+8	RC5
+9	RC9
+10	RC10
+%
+alone*	6
+annoy*	3	10
+answer*	3
+anxious*	1
+apartment*	9
+assignment*	6
+ate	4
+attention*	2	10
+bed*	7
+bore*	2
+boring	2
+breakfast*	4
+call*	9
+class*	1	2
+clean*	9
+complete*	6
+completing	6
+conversation*	5
+day*	3	7
+discuss*	5
+due*	6
+earli*	3	7
+early*	3	7
+eat*	4
+email*	3
+emotion*	6
+enjoy*	4	8
+exam*	1
+excite*	5
+expect*	10
+final*	1
+finish*	4	8
+focus*	6
+food*	4
+friend*	5
+frustrat*	3	10
+game*	8
+gaming	8
+grade*	1
+group*	5
+hallway*	4
+happi*	5	8
+happy*	5	8
+homework*	10
+hungri*	4
+hungry*	4
+interest*	2
+lab*	3
+late*	3	7
+learn*	2	10
+leav*	3
+lecture*	2
+left*	3
+librari*	6
+library*	6
+life*	10
+listen*	2
+live*	9
+living	9
+lunch*	4
+material*	1	2
+meet*	3	5
+met	3	5
+mind*	6
+minute*	3
+morning*	3	4	7
+move*	3	9
+moving	3	9
+music*	8
+nap*	7
+nervous*	1
+nice*	5
+night*	7
+note*	1	2
+office*	3
+pay*	2	10
+people*	10
+phone*	9
+plan*	5
+play*	8
+prepare*	1
+preparing	1
+problem*	10
+professor*	1	2
+project*	6	9
+question*	1	3	10
+quiz*	1
+read*	9
+relax*	8
+rest*	7
+room*	9
+sad*	10
+semester*	5
+show*	8
+sleep*	7
+start*	1
+stop*	3	9
+stress*	1
+studi*	1	10
+study*	1	10
+talk*	5	9	10
+task*	6
+test*	1
+thought*	9
+tire*	7
+tiring	7
+today*	3
+together*	5
+told	3	5	9
+topic*	2
+train*	3
+understand*	10
+video*	8
+wait*	3
+walk*	3
+watch*	8
+wear*	7
+week*	5
+weekend*	5
+work*	3	6
+worn	7
+year*	5

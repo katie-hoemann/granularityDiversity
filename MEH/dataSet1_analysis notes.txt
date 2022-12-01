@@ -1,4 +1,4 @@
-INPUT FILE SETTINGS: (specified file path with .txt files)
+INPUT FILE SETTINGS: (specified file path with .csv file; select Filename as file identifier and Text as text column)
 OUTPUT GENERATION: (specified file path for output location)
 TEXT SEGMENTATION: (none; default)
 CONVERSION LIST: added items below to the MEH default list (provided in separate file for reference)
@@ -6,65 +6,6 @@ STOP LIST: added items below to the MEH default list (provided in separate file 
 DICTIONARY LIST: (none; default)
 TOKEN HANDLING OPTIONS: (no changes)
 OUTPUT FILE TYPES: prune frequency list every 100 documents
-N-GRAM SETTINGS: ignore documents with a word count less than 30; retain X most frequent n-grams (by raw frequency), with number varying by analysis
+N-GRAM SETTINGS: ignore documents with a word count less than 1; retain X most frequent n-grams (by raw frequency), with number varying by analysis
 
 Defaults retained for all other settings
-
-
-Conversion list:
-tv^television
-prof^professor
-min^minute
-prep^prepare
-e-mail*^email
-ppl^people
-see*^see
-meet*^meet
-met^meet
-better^good
-best^good
-
-Stop list:
-receive
-prompt
-right
-pretty
-dr
-time
-happen
-important
-think
-do
-feel
-feeling
-unpredictable
-predictable
-control
-anything
-nothing
-cope
-significant
-change
-situation
-super
-slightly
-bit
-finally
-sure
-fairly
-see
-sit
-look
-give
-find
-said
-set
-figure
-head
-survey
-sensor
-ia
-moment
-point
-extreme
- 
